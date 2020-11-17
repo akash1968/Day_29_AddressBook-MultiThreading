@@ -17,6 +17,8 @@ namespace Day_29_AddressBook_MultiThreading
             AddressBookRepository repository = new AddressBookRepository();
             ///UC16 Retrieve all the contact details from the DB
             repository.RetrieveAllContactDetails();
+            /// UC17 Updates the column specified of the existing contact using name.
+            Console.WriteLine(repository.UpdateExistingContactUsingByName("Akhilesh", "Singh", "Akhilesh@gmail.com") ? "Updated Succesfully" : "Updated Failed");
         }
     }
 }
