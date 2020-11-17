@@ -19,6 +19,8 @@ namespace Day_29_AddressBook_MultiThreading
             repository.RetrieveAllContactDetails();
             /// UC17 Updates the column specified of the existing contact using name.
             Console.WriteLine(repository.UpdateExistingContactUsingByName("Akhilesh", "Singh", "Akhilesh@gmail.com") ? "Updated Succesfully" : "Updated Failed");
+            /// UC18 Retrieving the data from the address book entered within a date frame
+            repository.RetrieveAllTheContactAddedInBetweenADate(Convert.ToDateTime("5/12/2018"));
         }
     }
 }
