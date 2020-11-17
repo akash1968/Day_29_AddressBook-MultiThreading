@@ -25,6 +25,7 @@ namespace Day_29_AddressBook_MultiThreading
         public string EmailId { get; set; }
         public string AddressBookType { get; set; }
         public string AddressBookName { get; set; }
+        public DateTime DateOfEntry { get; set; }
 
 
     }
